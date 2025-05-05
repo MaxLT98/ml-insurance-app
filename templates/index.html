@@ -1,0 +1,11 @@
+
+<h1>Predecir los gastos medicos para una cierta edad</h1>
+<form method ="POST">
+    <LABEL for="edad">Cuantos años tiene la persona :</LABEL><br>
+    <input type="number" id="edad" name="edad" required><br><br>
+    <button type="submit">Calcular :</button>
+</form>
+
+{% if prediction %}
+    <h2>El precio estimado de gastos medicos para una persona con edad {{edad}} años es : $ {{ prediction }}</h2>
+{% endif %}
